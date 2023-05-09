@@ -3,4 +3,8 @@ import { createRoot } from "react-dom/client";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<h1>Hello, World!</h1>);
+
+const numberA = Number(prompt('Podaj liczbę A:'));
+const numberB = Number(prompt('Podaj liczbę B:'));
+
+root.render(<h2>{ numberA + numberB }</h2>);
