@@ -1,9 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-const redDiv = <div />;
-const greenDiv = <div />;
-const blueDiv = <div />;
+const redDivStyle = {height: "100px", backgroundColor: 'red'};
+const greenDivStyle = {height: '100px', backgroundColor: 'green'}
+const blueDivStyle = {height: '100px', backgroundColor: 'blue'};
+
+const redDiv = <div style={redDivStyle} />;
+const greenDiv = <div style={greenDivStyle} />;
+const blueDiv = <div style={blueDivStyle} />;
 
 const container = document.getElementById("app");
 const root = createRoot(container);
