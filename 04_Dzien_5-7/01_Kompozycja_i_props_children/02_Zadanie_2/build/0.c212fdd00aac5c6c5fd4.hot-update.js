@@ -1,0 +1,50 @@
+"use strict";
+self["webpackHotUpdatees6_react"](0,{
+
+/***/ 23:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+
+
+var container = document.getElementById("app");
+var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);
+function ShopItem(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ShoptItemHeader, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ShopItemDescription, null, props.description), "a", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ShopItemPricing, null)));
+}
+function ShoptItemHeader(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, props.children.title);
+  // <img src={props.img}/>
+}
+
+function ShopItemDescription(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, props.children.desc));
+}
+function ShopItemPricing(data) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, "Cena: ", data.price, " z\u0142", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Kup!"));
+}
+var data = {
+  title: "MacBook Pro",
+  image: "https://bit.ly/2EEtduD",
+  description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
+  price: 9999
+};
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ShopItem, {
+  props: data
+}));
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("ab2665e65bdd169c9adf")
+/******/ })();
+/******/ 
+/******/ }
+);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5jMjEyZmRkMDBhYWM1YzZjNWZkNC5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBaUQ7QUFDTDtBQUU1QyxJQUFNSSxTQUFTLEdBQUdDLFFBQVEsQ0FBQ0MsY0FBYyxDQUFDLEtBQUssQ0FBQztBQUNoRCxJQUFNQyxJQUFJLEdBQUdKLDREQUFVLENBQUNDLFNBQVMsQ0FBQztBQUVsQyxTQUFTSSxRQUFRQSxDQUFDQyxLQUFLLEVBQUU7RUFDckIsb0JBQU9ULDBEQUFBLCtCQUNIQSwwREFBQSxDQUFDVyxlQUFlLHFCQUNaWCwwREFBQSxDQUFDWSxtQkFBbUIsUUFDZkgsS0FBSyxDQUFDSSxXQUNVLENBQUMsS0FDdEIsZUFBQWIsMERBQUEsQ0FBQ2MsZUFBZSxNQUFrQixDQUNyQixDQUdaLENBQUM7QUFDZDtBQUVBLFNBQVNILGVBQWVBLENBQUNGLEtBQUssRUFBRTtFQUM1QixvQkFBT1QsMERBQUEsYUFBS1MsS0FBSyxDQUFDTSxRQUFRLENBQUNDLEtBQVUsQ0FBQztFQUN0QztBQUNKOztBQUVBLFNBQVNKLG1CQUFtQkEsQ0FBQ0gsS0FBSyxFQUFFO0VBQ2hDLG9CQUFPVCwwREFBQSwrQkFDSEEsMERBQUEsWUFBSVMsS0FBSyxDQUFDTSxRQUFRLENBQUNFLElBQVEsQ0FDdEIsQ0FBQztBQUNkO0FBRUEsU0FBU0gsZUFBZUEsQ0FBQ0ksSUFBSSxFQUFFO0VBQzNCLG9CQUFPbEIsMERBQUEsaUJBQVEsUUFDTCxFQUFDa0IsSUFBSSxDQUFDQyxLQUFLLEVBQUMsVUFDbEIsZUFBQW5CLDBEQUFBLGlCQUFRLE1BQVksQ0FDaEIsQ0FBQztBQUNiO0FBRUEsSUFBTWtCLElBQUksR0FBRztFQUNURixLQUFLLEVBQUUsYUFBYTtFQUNwQkksS0FBSyxFQUFFLHdCQUF3QjtFQUMvQlAsV0FBVyxFQUFFLHNRQUFzUTtFQUNuUk0sS0FBSyxFQUFFO0FBQ1gsQ0FBQztBQUVEWixJQUFJLENBQUNjLE1BQU0sZUFBQ3JCLDBEQUFBLENBQUNRLFFBQVE7RUFBQ0MsS0FBSyxFQUFJUztBQUFLLENBQUUsQ0FBQyxDQUFDOzs7Ozs7OztVQzVDeEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9lczYtcmVhY3QvLi8wNF9Eemllbl81LTcvMDFfS29tcG96eWNqYV9pX3Byb3BzX2NoaWxkcmVuLzAyX1phZGFuaWVfMi9qcy9hcHAuanMiLCJ3ZWJwYWNrOi8vZXM2LXJlYWN0L3dlYnBhY2svcnVudGltZS9nZXRGdWxsSGFzaCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHtDb21wb25lbnQsIEZyYWdtZW50fSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7Y3JlYXRlUm9vdH0gZnJvbSBcInJlYWN0LWRvbS9jbGllbnRcIjtcblxuY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJhcHBcIik7XG5jb25zdCByb290ID0gY3JlYXRlUm9vdChjb250YWluZXIpO1xuXG5mdW5jdGlvbiBTaG9wSXRlbShwcm9wcykge1xuICAgIHJldHVybiA8c2VjdGlvbj5cbiAgICAgICAgPFNob3B0SXRlbUhlYWRlcj5cbiAgICAgICAgICAgIDxTaG9wSXRlbURlc2NyaXB0aW9uPlxuICAgICAgICAgICAgICAgIHtwcm9wcy5kZXNjcmlwdGlvbn1cbiAgICAgICAgICAgIDwvU2hvcEl0ZW1EZXNjcmlwdGlvbj5hXG4gICAgICAgICAgICA8U2hvcEl0ZW1QcmljaW5nPjwvU2hvcEl0ZW1QcmljaW5nPlxuICAgICAgICA8L1Nob3B0SXRlbUhlYWRlcj5cblxuXG4gICAgPC9zZWN0aW9uPlxufVxuXG5mdW5jdGlvbiBTaG9wdEl0ZW1IZWFkZXIocHJvcHMpIHtcbiAgICByZXR1cm4gPGgxPntwcm9wcy5jaGlsZHJlbi50aXRsZX08L2gxPlxuICAgIC8vIDxpbWcgc3JjPXtwcm9wcy5pbWd9Lz5cbn1cblxuZnVuY3Rpb24gU2hvcEl0ZW1EZXNjcmlwdGlvbihwcm9wcykge1xuICAgIHJldHVybiA8YXJ0aWNsZT5cbiAgICAgICAgPHA+e3Byb3BzLmNoaWxkcmVuLmRlc2N9PC9wPlxuICAgIDwvYXJ0aWNsZT5cbn1cblxuZnVuY3Rpb24gU2hvcEl0ZW1QcmljaW5nKGRhdGEpIHtcbiAgICByZXR1cm4gPGZvb3Rlcj5cbiAgICAgICAgQ2VuYToge2RhdGEucHJpY2V9IHrFglxuICAgICAgICA8YnV0dG9uPkt1cCE8L2J1dHRvbj5cbiAgICA8L2Zvb3Rlcj47XG59XG5cbmNvbnN0IGRhdGEgPSB7XG4gICAgdGl0bGU6IFwiTWFjQm9vayBQcm9cIixcbiAgICBpbWFnZTogXCJodHRwczovL2JpdC5seS8yRUV0ZHVEXCIsXG4gICAgZGVzY3JpcHRpb246IFwiTW9jIGkgbW9iaWxub8WbxIcg4oCTIE1hY0Jvb2sgUHJvIHd5cmHFum5pZSBwb2Rub3NpIHR1IHBvcHJ6ZWN6a8SZLiBUZXJheiBtb8W8ZXN6IGplc3pjemUgc3p5YmNpZWogcmVhbGl6b3dhxIcgc3dvamUgcG9teXPFgnkuIFBvbW9nxIUgQ2kgdyB0eW0gd3lkYWpuZSBwcm9jZXNvcnkgaSB1a8WCYWR5IHBhbWnEmWNpLCB6YWF3YW5zb3dhbmEgZ3JhZmlrYSwgYsWCeXNrYXdpY3puaWUgZHppYcWCYWrEhWNhIHBhbWnEmcSHIG1hc293YSBpIGlubmUgZG9za29uYcWCZSByb3p3acSFemFuaWEuXCIsXG4gICAgcHJpY2U6IDk5OTlcbn07XG5cbnJvb3QucmVuZGVyKDxTaG9wSXRlbSBwcm9wcyA9IHtkYXRhfSAvPik7XG4iLCJfX3dlYnBhY2tfcmVxdWlyZV9fLmggPSAoKSA9PiAoXCJhYjI2NjVlNjViZGQxNjljOWFkZlwiKSJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsIkZyYWdtZW50IiwiY3JlYXRlUm9vdCIsImNvbnRhaW5lciIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiLCJyb290IiwiU2hvcEl0ZW0iLCJwcm9wcyIsImNyZWF0ZUVsZW1lbnQiLCJTaG9wdEl0ZW1IZWFkZXIiLCJTaG9wSXRlbURlc2NyaXB0aW9uIiwiZGVzY3JpcHRpb24iLCJTaG9wSXRlbVByaWNpbmciLCJjaGlsZHJlbiIsInRpdGxlIiwiZGVzYyIsImRhdGEiLCJwcmljZSIsImltYWdlIiwicmVuZGVyIl0sInNvdXJjZVJvb3QiOiIifQ==
