@@ -3,4 +3,20 @@ import { createRoot } from "react-dom/client";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<h1>Hello, World!</h1>);
+
+// function AddNumbers(props) {
+//     const {numberA, numberB} = props;
+//   return <h1>{numberA + numberB}</h1>;
+// }
+
+class AddNumbers extends Component {
+    render() {
+        const {numberA, numberB} = this.props;
+        return <h1>{numberA + numberB * 2}</h1>;
+    }
+}
+
+
+root.render(
+    <AddNumbers numberA={5.6} numberB={9.4} />
+);
