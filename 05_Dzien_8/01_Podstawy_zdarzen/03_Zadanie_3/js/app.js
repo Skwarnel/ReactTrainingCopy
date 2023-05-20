@@ -8,13 +8,17 @@ function App() {
 }
 
 const HoverEvent = () => {
-    const eventHandler = () => {
+    const eventHandlerMouseEnter = () => {
         console.log("Mouse enetered the button. Code powered by GPS");
+    }
+
+    function eventHandlerMouseLeave() {
+        console.log("Mouse leaved the button. Code powered by GPS");
     }
 
     return (
         <div>
-            <button onMouseEnter={eventHandler}>Come here</button>
+            <button onMouseEnter={eventHandlerMouseEnter} onMouseLeave={eventHandlerMouseLeave}>Come here and leave it</button>
         </div>
     )
 }
