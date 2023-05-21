@@ -19,7 +19,7 @@ class CurrentDate extends Component {
         return (
             <>
                 <h1>Aktualny czas to:</h1>
-                <date>{this.state.time}</date>
+                <p>{this.state.time}</p>
                 <button onClick={this.updateTime}>Zaktualizuj czas</button>
             </>
         )

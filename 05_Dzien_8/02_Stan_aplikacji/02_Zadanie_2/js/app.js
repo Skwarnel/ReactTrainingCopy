@@ -1,7 +1,10 @@
 // app.js
 
 import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+
+const container = document.getElementById("app");
+const root = createRoot(container);
 
 import CurrentDate from './CurrentDate';
 
@@ -9,4 +12,4 @@ function App() {
     return <CurrentDate />;
 }
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+root.render(<App/>);
