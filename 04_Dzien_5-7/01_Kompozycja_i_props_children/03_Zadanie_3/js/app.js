@@ -6,49 +6,24 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 function App(props) {
-    return <ShopList data={data} />;
+    const {products} = props;
+return <ShopList list={products}/>
 }
 
 function ShopList(props) {
-    const {data} = props;
-    return (
+    const {list} = props;
+    return(
         <ul>
             {
-                data.map(element => {
+                list.map(element => {
                     return <li key={element.title}>{element.title}
-                    <img src={element.image} />
+                        <img src={element.image} />
                     </li>
                 })
             }
         </ul>
     )
 }
-
-// function ShopItemHeader() {
-//     return (
-//         <header>
-//             <h1>{data.title}</h1>
-//             <img src={data.image} width='350px'/>
-//         </header>
-//     )
-// }
-//
-// function ShopItemDescription() {
-//     return (
-//         <article>
-//             <p>{data.description}</p>
-//         </article>
-//     )
-// }
-//
-// function ShopItemPricing() {
-//     return (
-//         <footer>
-//             Cena: {data.price} zł
-//             <button>Kup!</button>
-//         </footer>
-//     )
-// }
 
 const data = [
         {
@@ -69,5 +44,5 @@ const data = [
 ;
 
 root.render(
-    <App data={data}/>
+    <App products={data}/>
 );

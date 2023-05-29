@@ -1,34 +1,12 @@
 import React, { Component } from "react";
 import { createRoot } from "react-dom/client";
 
-// function Chat(props) {
-//   return (
-//     <section className="chat">
-//       <header>
-//         <h1>Chat prywatny</h1>
-//       </header>
-//       <div>
-//         <ul>
-//           <li>Wpis z chatu 1</li>
-//           <li>Wpis z chatu 2</li>
-//           <li>Wpis z chatu 3</li>
-//         </ul>
-//       </div>
-//       <footer>
-//         <form>
-//           <input type="text" />
-//           <button>Wyślij</button>
-//         </form>
-//       </footer>
-//     </section>
-//   );
-// }
-
 function Chat(props) {
+    const {list} = props;
     return (
         <section className="chat">
             <ChatHeader />
-            <ChatMessage messages={props}/>
+            <ChatMessage list={list}/>
             <NewChatMessage />
         </section>
     );
@@ -43,14 +21,14 @@ const ChatHeader = () => {
 }
 
 const ChatMessage = (props) => {
-    const {messages} = props;
+    const {list} = props;
     return (
         <div>
             <ul>
-                {messages.map((item, index)=> {
+                {list.map((item, index)=> {
                     return (
                         <li key={index}>
-                            {messages}
+                            {item}
                         </li>
                     );
                 })}
@@ -70,12 +48,13 @@ const NewChatMessage = () => {
     )
 };
 
-const messages = ["Wpis z chatu 1", "Wpis z chatu 2", "Wpis z chatu 3"];
+const data = ["Wpis z chatu 1", "Wpis z chatu 2", "Wpis z chatu 3", "Wiadomość od GPS: jest cudownie"];
 
 function App(props) {
-  return <Chat messages={messages}/>;
+    const {messages} = props;
+  return <Chat list={messages}/>;
 }
 
 const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<App />);
+root.render(<App messages={data}/>);
