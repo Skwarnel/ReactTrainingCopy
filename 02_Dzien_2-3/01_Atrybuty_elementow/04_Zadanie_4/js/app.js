@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
+
 const answer = String(prompt('Jaki kolor ramki chcesz zobaczyć?'));
 const allowedAnswers = ['red', 'green', 'blue'];
 let color;

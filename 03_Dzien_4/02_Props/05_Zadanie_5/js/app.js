@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, {Component} from "react";
+import { createRoot} from "react-dom";
 
 const menu = [
     {
@@ -20,7 +20,7 @@ const menu = [
     }
 ];
 
-class Menu extends React.Component {
+class Menu extends Component {
     render() {
         return (
             <ul>
@@ -30,7 +30,6 @@ class Menu extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Menu />,
-    document.getElementById("app")
-);
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(Menu);

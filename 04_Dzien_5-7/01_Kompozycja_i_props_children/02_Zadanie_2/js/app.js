@@ -5,61 +5,57 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 function App(props) {
-    return <ShopItem title={data.title}></ShopItem>;
+    const {product} = props;
+    return <ShopItem product={product} />;
 }
 
 function ShopItem(props) {
-    return <section>
+    const {product} = props;
+    return (
+        <section>
+            <ShopItemHeader title={product.title} image={product.image} />
+            <ShopItemDescription desc={product.description} />
+            <ShopItemPricing price={product.price} />
+        </section>
+    )
+}
+
+function ShopItemHeader(props) {
+    const {title, image} = props;
+    return (
         <header>
-            <h1>{props.title}</h1>
-            <img src="{image z props}"/>
+            <h1>{title}</h1>
+            <img src={image} width='350px'/>
         </header>
+    )
+}
+
+function ShopItemDescription(props) {
+    const {desc} = props;
+    return (
         <article>
-            <p>description z props</p>
+            <p>{desc}</p>
         </article>
+    )
+}
+
+function ShopItemPricing(props) {
+    const {price} = props;
+    return (
         <footer>
-            Cena: price z props zł
+            <p>Cena: {price} zł</p>
             <button>Kup!</button>
         </footer>
-    </section>
-
+    )
 }
-
-// function ShopItem(props) {
-//     return <section>
-//         <ShopItemHeader>
-//             {props.title}
-//         </ShopItemHeader>
-//         <ShopItemDescription>
-//             {props.description}
-//         </ShopItemDescription>a
-//         <ShopItemPricing></ShopItemPricing>
-//     </section>
-// }
-//
-function ShopItemHeader(props) {
-    return <h1>{props.children.title}</h1>
-    // <img src={props.img}/>
-}
-//
-// function ShopItemDescription(props) {
-//     return <article>
-//         <p>{props.children.desc}</p>
-//     </article>
-// }
-//
-// function ShopItemPricing(data) {
-//     return <footer>
-//         Cena: {data.price} zł
-//         <button>Kup!</button>
-//     </footer>;
-// }
 
 const data = {
     title: "MacBook Pro",
-    image: "https://bit.ly/2EEtduD",
+    image: "https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
     price: 9999
 };
 
-root.render(<App title={data.title} />);
+root.render(
+    <App product={data} />
+);

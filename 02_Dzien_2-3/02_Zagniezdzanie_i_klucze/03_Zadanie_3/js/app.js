@@ -8,19 +8,21 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 const list = (
-    <div>
+    <>
+        <ul>
         {
             people.map(elem => {
-                return <div className="person" key={elem.id}>
+                return <li className="person" key={elem.id}>
                     <img src={elem.avatar}/>
                     <div className="info">
                         <h1>{elem.title} {elem.name} {elem.surname}</h1>
                         <p>{elem.bio}</p>
                     </div>
-                </div>
+                </li>
             })
         }
-    </div>
+        </ul>
+    </>
 );
 
 

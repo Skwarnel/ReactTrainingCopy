@@ -22,6 +22,6 @@ const GrandChildComponent = (props) => {
 
 root.render(
     <ParentComponent >
-        <h2>To działa</h2>
+        To działa
     </ParentComponent>
 );
